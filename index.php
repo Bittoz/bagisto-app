@@ -1,0 +1,1 @@
+../bagisto-app/public/index.php
