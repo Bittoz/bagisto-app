@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Telegram\Commands;
 
 use Telegram\Bot\Commands\Command;
@@ -10,7 +9,7 @@ class StartCommand extends Command
     /**
      * @var string Command Name
      */
-    protected $name = 'start';
+    protected string $name = 'start';
 
     /**
      * @var string Command Description
@@ -20,7 +19,7 @@ class StartCommand extends Command
     /**
      * Handle the /start command
      */
-    public function handle(): void
+    public function handle()
     {
         $this->replyWithMessage([
             'text' => "👋 Welcome to Bittoz Bot!\n\nHere are some available commands:"
